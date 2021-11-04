@@ -32,3 +32,4 @@ request ('url', function(error, response, body)
 } // end of fetchCoordsByIP 
 
 module.exports = { fetchMyIP };
+module.exports = {fetchCoordsByIP};
