@@ -27,9 +27,8 @@ const fetchCoordsByIP = function(ip, callback){
 request ('url', function(error, response, body)
 {
 
-  
-})
 
+})
 } // end of fetchCoordsByIP 
 
 module.exports = { fetchMyIP };
