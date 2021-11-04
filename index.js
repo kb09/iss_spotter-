@@ -11,3 +11,12 @@ const {fetchCoordsByIP} = require('./ffetchCoordsByIP')
 
 //   console.log('It worked! Returned IP:' , ip);
 // });
+
+fetchCoordsByIP('99.247.121.151', function(error, coordinates){
+  if(error){
+    console.log('there is an error', error)
+    return
+  }
+  console.log('coordinates are', coordinates)
+
+}) // end of fetchCoordsByIP
