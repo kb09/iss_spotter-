@@ -21,6 +21,15 @@ const fetchMyIP = function(callback) {
     const ip = JSON.parse(body).ip;
     callback(null, ip);
   });
-};
+}; // end of fetchMyIP
+
+const fetchCoordsByIP = function(ip, callback){
+request ('url', function(error, response, body)
+{
+
+  
+})
+
+} // end of fetchCoordsByIP 
 
 module.exports = { fetchMyIP };
