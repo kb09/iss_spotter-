@@ -1,3 +1,5 @@
+const {fetchMyIP} = require('./fetchMyIp')
+const {fetchCoordsByIP} = require('./ffetchCoordsByIP')
 //  require and run our main fetch function.const { fetchMyIP } = require('./iss');
 
 // fetchMyIP((error, ip) => {
