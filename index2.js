@@ -1,5 +1,3 @@
-const { fetchMyIP } = require('./iss_promised');
-
 fetchMyIP()
   .then(fetchCoordsByIP)
   .then(fetchISSFlyOverTimes)
