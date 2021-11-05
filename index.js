@@ -1,6 +1,4 @@
-const {fetchMyIP} = require('./fetchMyIp');
-const {fetchCoordsByIP} = require('./fetchCoordsByIP');
-const { nextISSTimesForMyLocation } = reqire('./nextISSTimesForMyLocation');
+const { nextISSTimesForMyLocation } = require('./iss');
 
 const printPassTimes = function(passTimes) {
   for (const pass of passTimes) {
@@ -11,13 +9,10 @@ const printPassTimes = function(passTimes) {
   }
 };
 
-
-const { nextISSTimesForMyLocation } = require('./iss');
-
 nextISSTimesForMyLocation((error, passTimes) => {
   if (error) {
     return console.log("It didn't work!", error);
   }
   // success, print out the deets!
-  console.log(passTimes);
+  printPassTimes(passTimes);
 });
